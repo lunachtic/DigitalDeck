@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="APane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="272.0" prefWidth="457.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLDocumentControllerTCC">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <Pane fx:id="pnSelecionaSite" layoutX="71.0" prefHeight="266.0" prefWidth="315.0" style="-fx-background-color: 147 112 219;" visible="false">
+         <children>
+            <Button layoutX="196.0" layoutY="149.0" mnemonicParsing="false" onAction="#fecharTelaSite" text="Fechar" />
+            <TextField fx:id="campoURL" layoutX="74.0" layoutY="78.0" prefHeight="25.0" prefWidth="168.0" promptText="Exemplo: www.youtobe.com" />
+            <Button layoutX="64.0" layoutY="149.0" mnemonicParsing="false" onAction="#setSite" text="Selecionar Site" />
+         </children>
+      </Pane>
+      <Pane fx:id="principal" prefHeight="266.0" prefWidth="456.0">
+         <children>
+            <GridPane fx:id="grade" prefHeight="266.0" prefWidth="450.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="bt12" mnemonicParsing="false" onAction="#funcBT12" prefHeight="70.0" prefWidth="70.0" text="12" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                              <MenuItem mnemonicParsing="false" onAction="#definirAtalho" text="definir Atalho" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt7" mnemonicParsing="false" onAction="#funcBT7" prefHeight="70.0" prefWidth="70.0" text="7" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt3" mnemonicParsing="false" onAction="#funcBT3" prefHeight="70.0" prefWidth="70.0" text="3" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt15" mnemonicParsing="false" onAction="#funcBT15" prefHeight="70.0" prefWidth="70.0" text="15" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt14" mnemonicParsing="false" onAction="#funcBT14" prefHeight="70.0" prefWidth="70.0" text="14" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt11" mnemonicParsing="false" onAction="#funcBT11" prefHeight="70.0" prefWidth="70.0" text="11" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt6" mnemonicParsing="false" onAction="#funcBT6" prefHeight="70.0" prefWidth="70.0" text="6" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt8" mnemonicParsing="false" onAction="#funcBT8" prefHeight="70.0" prefWidth="70.0" text="8" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt2" mnemonicParsing="false" onAction="#funcBT2" prefHeight="70.0" prefWidth="70.0" text="2" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt4" mnemonicParsing="false" onAction="#funcBT4" prefHeight="70.0" prefWidth="70.0" text="4" GridPane.columnIndex="3">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt9" mnemonicParsing="false" onAction="#funcBT9" prefHeight="70.0" prefWidth="70.0" text="9" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt5" mnemonicParsing="false" onAction="#funcBT5" prefHeight="70.0" prefWidth="70.0" text="5" GridPane.columnIndex="4">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt10" mnemonicParsing="false" onAction="#funcBT10" prefHeight="70.0" prefWidth="70.0" text="10" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt13" mnemonicParsing="false" onAction="#funcBT13" prefHeight="70.0" prefWidth="70.0" text="13" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                              <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+                  <Button fx:id="bt1" mnemonicParsing="false" onAction="#funcBT1" prefHeight="70.0" prefWidth="70.0" text="1">
+                     <GridPane.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </GridPane.margin>
+                     <contextMenu>
+                        <ContextMenu>
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#selecionaApp" text="Seleciona App" />
+                              <MenuItem mnemonicParsing="false" onAction="#selectSite" text="Seleciona Site" />
+                          </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </GridPane>
+         </children>
+      </Pane>
+      <Pane fx:id="pnCapturaTeclado" layoutX="63.0" layoutY="3.0" prefHeight="266.0" prefWidth="315.0" visible="false">
+         <children>
+            <Button layoutX="132.0" layoutY="147.0" mnemonicParsing="false" onAction="#fecharTelaAtalho" text="Fechar" />
+            <TextField fx:id="campoAtalho" layoutX="74.0" layoutY="90.0" prefHeight="25.0" prefWidth="168.0" promptText="Exemplo: Ctrl+Alt+Del" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

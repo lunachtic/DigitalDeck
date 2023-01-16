@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Digital Deck</string>
+    <string name="bt1">botão1</string>
+    <string name="bt2">botão2</string>
+
+    <string name="title_activity_grade">GradeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
