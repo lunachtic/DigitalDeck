@@ -3,7 +3,7 @@ Aplicação desenvolvida para TCC do curso Técnico em informática do IFRS
 
 ### Artigo
 
-Para uma maior explição das inspirações que levaram a desenvovlver este projeto e como a history line do projeto leia o Artigo.
+Para uma maior explição das inspirações que levaram a desenvovlver este projeto e como a history line do projeto leia o Artigo. [🔗](Artigo%20TCC.pdf)
 
 ## Client
 
